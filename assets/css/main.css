@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* font-family: 'Alice',
+serif;
+font-family: 'Cookie',
+cursive;
+font-family: 'Sacramento',
+cursive; */
+
+/* color palette:
+brown: 5a3a35
+black: 0f0a0a
+yellowish: f6e6b7
+reddish: bd2f0f
+f8f5f1
+*/
+
+/* display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+overflow: hidden; */
+body{
+
+    background: #f6e6b7;
+    transition: 0.6s linear;
+    font-family: 'Alice', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Navbar */
+
+
+.nav-link{
+    color: #f6e6b7;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.9em;
+}
+
+.nav-link:hover {
+    color:crimson;
+
+}
+
+#mainNavbar .navbar-brand{
+    color: rgb(218, 65, 44);
+    font-family:'Cookie', cursive;
+    font-size: 3em;
+    padding-top: 30px; /*not quite right */
+
+}
+
+
+.navbar-nav{
+    justify-content: space-around;
+}
+/* Set the border color */
+
+.custom-toggler.navbar-toggler {
+    border-color: #f6e6b7;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(246, 230, 183)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* Main */
+
+#section-hero{
+    margin-top: 2%;
+}
+
+#div-hero{
+    margin-top: 7%;
+}
+
+#brand-welcome{
+    font-size: 1.5em;
+    
+}
+
+#hero-btn{
+    font-family: "Alice", serif;
+}
+
+#brand-name {
+    font-family: "Cookie", cursive;
+    font-size: 8em;
+}
+#cafe-info{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 2em;
+    align-items: center;
+}
+/* footer */
+#burger-menu{
+    color: white;
+}
+
+
+h1, h2{
+    color:rgb(155, 19, 1);
+    font-weight: lighter;
+    font-size: 2rem;
+    padding:0.1em;
+}
+
+p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    line-height: 2;
+
+}
+
+.cookie-monster{
+    color: brown;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+
+}
+
+.content{
+    margin-top: 100px; 
+}
+.panel {
+    background-size: cover 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+    color: rgba(241, 232, 222, 0.984);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.6s ease-in;
+
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+.navbar.scrolled{
+    background: rgb(218, 65, 44);
+    transition: background 300ms
+}
+/* Anything here only takes effect if smalls screens */
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    body{
+        background-color:rgb(248, 244, 234);
+        /* make size different if need be */
+    }
+}
